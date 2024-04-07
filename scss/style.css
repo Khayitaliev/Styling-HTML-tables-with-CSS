@@ -1,0 +1,101 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Root */
+:root {
+  --cl-black:#000;
+  --cl-white:#fff;
+  --cl-light-black:#292339;
+  --cl-light-grey:#F2F2F2;
+  --cl-row:#797979;
+}
+
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background: rgb(73, 62, 194);
+  background: linear-gradient(90deg, rgb(73, 62, 194) 7%, rgb(98, 60, 192) 17%, rgb(168, 56, 186) 58%, rgb(140, 56, 183) 85%);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px 50px;
+  font-size: clamp(12px, 1vw, 16px);
+}
+
+th {
+  background-color: var(--cl-light-black);
+  color: var(--cl-white);
+  font-weight: 500;
+}
+
+tr {
+  color: var(--cl-row);
+}
+
+tr:hover {
+  color: var(--cl-black);
+}
+
+tr:nth-child(odd) {
+  background-color: var(--cl-white);
+}
+
+tr:nth-child(even) {
+  background-color: var(--cl-light-grey);
+}
+
+th:first-child {
+  border-radius: 10px 0 0 0;
+  -webkit-border-radius: 10px 0 0 0;
+  -moz-border-radius: 10px 0 0 0;
+  -ms-border-radius: 10px 0 0 0;
+  -o-border-radius: 10px 0 0 0;
+}
+
+th:last-child {
+  border-radius: 0 10px 0 0;
+  -webkit-border-radius: 0 10px 0 0;
+  -moz-border-radius: 0 10px 0 0;
+  -ms-border-radius: 0 10px 0 0;
+  -o-border-radius: 0 10px 0 0;
+}
+
+tr:last-child td:first-child {
+  border-radius: 0 0 0 10px;
+  -webkit-border-radius: 0 0 0 10px;
+  -moz-border-radius: 0 0 0 10px;
+  -ms-border-radius: 0 0 0 10px;
+  -o-border-radius: 0 0 0 10px;
+}
+
+tr:last-child td:last-child {
+  border-radius: 0 0 10px 0;
+  -webkit-border-radius: 0 0 10px 0;
+  -moz-border-radius: 0 0 10px 0;
+  -ms-border-radius: 0 0 10px 0;
+  -o-border-radius: 0 0 10px 0;
+}/*# sourceMappingURL=style.css.map */
